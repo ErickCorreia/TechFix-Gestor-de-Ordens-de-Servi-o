@@ -7,16 +7,25 @@
 ## Sobre o Projeto
 Este projeto resolve a dor de pequenas assistências técnicas que precisam organizar a entrada de hardwares e o status de manutenção.
 
+## Como Executar
+
+ Testes
+- Execute: `./vendor/bin/phpunit tests`
+
+1. Instale as dependências: `composer install`
 ## 1. composer install
 O que faz: Lê o seu arquivo composer.json e baixa a pasta vendor/ com o PHPUnit.
 
 Por que é vital: Sem isso, os testes não rodam e o PHP não vai achar as classes do seu projeto. É como baixar as peças antes de montar o motor.
 
+
+2. Inicie o servidor: `php -S localhost:8000 -t src`
 ## 2. php -S localhost:8000 -t src
 O que faz: Ativa o servidor embutido do PHP.
 
 O parâmetro -t src: Esse é o "pulo do gato". Ele diz ao PHP que a "cara" do site está dentro da pasta src. Assim, quando você abrir o navegador, ele já lê o index.php direto.
 
+3. Acesse: `http://localhost:8000`
 ## 3. ./vendor/bin/phpunit tests
 O que faz: Chama o executor de testes que o Composer instalou.
 
